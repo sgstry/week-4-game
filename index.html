@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  </head>
+  <body>
+
+	<header class="page-header">
+  		<h1 >Crystals Collector!</h1>
+	</header>
+
+    <section id="rules">
+		<p>You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystall you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each crystal</p>
+    </section>
+
+    <div id="randomNumber">
+		0
+    </div>
+    <div id="scores">
+		<h4>Wins: </h4>
+		<h4>Losses: </h4>
+    </div>
+
+    <div id="crystals">
+		<img id="redjewel" src="assets/images/redjewel.jpg" alt="red jewel">
+		<img id="bluejewel" src="assets/images/bluejewel.jpg" alt="blue jewel">
+		<img id="yellowjewel" src="assets/images/yellowjewel.jpg" alt="yellow jewel">
+		<img id="greenjewel" src="assets/images/greenjewel.jpg" alt="green jewel">
+    </div>
+
+	<div>Your total score is:</div>
+	<div id="score">0</div>
+
+    <script src="assets/javascript/game.js"></script>
+
+  </body>
+</html>
